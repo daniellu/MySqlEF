@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplate", "Source\ProjectTemplate\ProjectTemplate.csproj", "{3AF1B31D-402C-43C3-A4FF-B9952D544923}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplate.Web", "Source\ProjectTemplate.Web\ProjectTemplate.Web.csproj", "{3AF1B31D-402C-43C3-A4FF-B9952D544923}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6920499E-CCC5-490E-B56B-6369AC941CCE}"
 	ProjectSection(SolutionItems) = preProject
@@ -12,11 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{692049
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Source\Domain\Domain.csproj", "{BCCB18E4-727B-46D7-8C90-C3F0F4036D50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplate.Domain", "Source\ProjectTemplate.Domain\ProjectTemplate.Domain.csproj", "{BCCB18E4-727B-46D7-8C90-C3F0F4036D50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Source\Data\Data.csproj", "{1028FA85-E844-405B-80E6-2F73F2DDD0AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplate.Data", "Source\ProjectTemplate.Data\ProjectTemplate.Data.csproj", "{1028FA85-E844-405B-80E6-2F73F2DDD0AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Executable", "Source\Executable\Executable.csproj", "{929063EA-544C-4CF9-99A0-17F245BAD9EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplate.Executable", "Source\ProjectTemplate.Executable\ProjectTemplate.Executable.csproj", "{929063EA-544C-4CF9-99A0-17F245BAD9EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
