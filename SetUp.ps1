@@ -28,9 +28,9 @@ RenameProject -oldProjectName "ProjectTemplate.Domain" -newProjectName "$Solutio
 RenameProject -oldProjectName "ProjectTemplate.Executable" -newProjectName "$SolutionName.Executable"
 RenameProject -oldProjectName "ProjectTemplate.Web" -newProjectName "$SolutionName.Web"
 
+(Get-Content "$SolutionName.sln") -replace "ProjectTemplate", $SolutionName | Set-Content "$SolutionName.sln"
 
-
-$files = Get-ChildItem -Path "Source\*" -Include "*.cs","*.csproj","*.cshtml" -Recurse -Force
+$files = Get-ChildItem -Path "Source\*" -Include "*.cs","*.csproj","*.cshtml","*.asax","*.config" -Recurse -Force
 foreach ($file in $files)
 {
   Write-Host $file
