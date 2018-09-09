@@ -88,15 +88,28 @@ namespace Hatfield.AnalyteManagement.GuidelineCalculation
             }
 
             var pointToMatch = data;
-            var depend = dataset.FirstOrDefault(x => x.DateTime.Date == pointToMatch.DateTime.Date && 
-                                                    x.Site == pointToMatch.Site && 
-                                                    String.Compare(x.Analyte, dependAnalyteName, true) == 0);
 
-            if (depend == null || depend.Value == null)
+            if (dependAnalyteName == Constants.PH_AnalyteName)
             {
-                return false;
+                return pointToMatch.PH.HasValue;
             }
-            data = callback(depend.Value.Value, data);
+            if (dependAnalyteName == Constants.Hardness_AnalyteName)
+            {
+                return pointToMatch.Hardness.HasValue;
+            }
+            if (dependAnalyteName == Constants.Chloride_AnalyteName)
+            {
+                return pointToMatch.Chloride.HasValue;
+            }
+            //var depend = dataset.FirstOrDefault(x => x.DateTime.Date == pointToMatch.DateTime.Date && 
+            //                                        x.Site == pointToMatch.Site && 
+            //                                        String.Compare(x.Analyte, dependAnalyteName, true) == 0);
+
+            //if (depend == null || depend.Value == null)
+            //{
+            //    return false;
+            //}
+            //data = callback(depend.Value.Value, data);
             return true;
         }
 
