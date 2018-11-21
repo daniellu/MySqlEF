@@ -12,10 +12,12 @@ namespace Hatfield.AnalyteManagement.GuidelineCalculation
         public const string Hardness_AnalyteName = "Hardness (as CaCO3)";
         public const string Chloride_AnalyteName = "Chloride (Cl)";
         public const string MathE = "Math.E";
+        public const string Temperature = "Temp";
 
         public const string DoubleValueType = "double";
         public const string EquationValueType = "equation";
         public const string RangeValueType = "range";
+        public const string AmmoniaLookupTableValueType = "ammonialookuptable";
 
         public static readonly ComparisonOperation[] LinearOperations =
         {

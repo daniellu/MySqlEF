@@ -74,6 +74,10 @@
       <Project>{bccb18e4-727b-46d7-8c90-c3f0f4036d50}</Project>
       <Name>Hatfield.AnalyteManagement.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WaterResourceData.WaterQuality.Ammonia\WaterResourceData.WaterQuality.Ammonia.csproj">
+      <Project>{6f6d0adc-8a0d-4aa8-91d5-c8b279310411}</Project>
+      <Name>WaterResourceData.WaterQuality.Ammonia</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -18,6 +18,7 @@ namespace Hatfield.AnalyteManagement.GuidelineCalculation
         public double? PH { get; set; }
         public double? Hardness { get; set; }
         public double? Chloride { get; set; }
+        public double? Temperature { get; set; }
 
         public GuidelineCalculationResultViewModel ToResult()
         {
@@ -44,6 +45,14 @@ namespace Hatfield.AnalyteManagement.GuidelineCalculation
             if (Chloride.HasValue)
             {
                 dic.Add(Constants.Chloride_AnalyteName, Chloride);
+            }
+            if (Temperature.HasValue)
+            {
+                dic.Add(Constants.Temperature, Temperature);
+            }
+            else
+            {
+                dic.Add(Constants.Temperature, 20.0);
             }
 
             return dic;

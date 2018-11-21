@@ -16,5 +16,6 @@ namespace Hatfield.AnalyteManagement.Web.Models
         public double? hardness { get; set; }
         public double? pH { get; set; }
         public double? chloride { get; set; }
+        public double? temperature { get; set; }
     }
 }

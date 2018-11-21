@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using WaterResourceData.WaterQuality.Ammonia;
 
 namespace Hatfield.AnalyteManagement.GuidelineCalculation
 {
@@ -75,8 +76,15 @@ namespace Hatfield.AnalyteManagement.GuidelineCalculation
                 return this.CalculateStaticGuidelineValue(guideline);
             }
             else if (guideline.ValueType == Constants.EquationValueType)
-            {   
+            {
                 double? parsedValue = EvaluateEquation(guideline.GuidelineValue, data.ToEquationParameters());
+
+                return new SimpleGuidelineValue(guideline.Guideline.Name, guideline.AnalyteName, guideline.ValueType, guideline.Unit, parsedValue);
+            }
+            else if (guideline.ValueType == Constants.AmmoniaLookupTableValueType)
+            {
+                var ammoniaGuidelineCalculator = new AmmoniaGuidelineValueCalculator();
+                double? parsedValue = ammoniaGuidelineCalculator.CalculateGuidelineValue(guideline.GuidelineValue, data.Value.Value, data.ToEquationParameters());
 
                 return new SimpleGuidelineValue(guideline.Guideline.Name, guideline.AnalyteName, guideline.ValueType, guideline.Unit, parsedValue);
             }

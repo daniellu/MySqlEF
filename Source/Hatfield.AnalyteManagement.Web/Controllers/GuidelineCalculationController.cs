@@ -83,7 +83,8 @@ namespace Hatfield.AnalyteManagement.Web.Controllers
                 PH = data.pH,
                 Chloride = data.chloride,
                 Hardness = data.hardness,
-                Unit = data.unit
+                Unit = data.unit,
+                Temperature = data.temperature
             };
 
             return new List<GuidelineCalculationRequestViewModel> { result };

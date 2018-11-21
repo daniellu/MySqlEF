@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hatfield.AnalyteManagement.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hatfield.AnalyteManagement.GuidelineCalculation", "Source\Hatfield.AnalyteManagement.GuidelineCalculation\Hatfield.AnalyteManagement.GuidelineCalculation.csproj", "{6742DC07-D134-48BB-9F09-F10571F71878}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterResourceData.WaterQuality.Ammonia", "Source\WaterResourceData.WaterQuality.Ammonia\WaterResourceData.WaterQuality.Ammonia.csproj", "{6F6D0ADC-8A0D-4AA8-91D5-C8B279310411}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{6742DC07-D134-48BB-9F09-F10571F71878}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6742DC07-D134-48BB-9F09-F10571F71878}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6742DC07-D134-48BB-9F09-F10571F71878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6D0ADC-8A0D-4AA8-91D5-C8B279310411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6D0ADC-8A0D-4AA8-91D5-C8B279310411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6D0ADC-8A0D-4AA8-91D5-C8B279310411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6D0ADC-8A0D-4AA8-91D5-C8B279310411}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
